@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 JavaScript calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/" name="cal">
+            <input type="text" readonly class="value" name="text">
+            <span class="num operators" onclick="document.cal.text.value+='/'">/</span>
+            <span class="num operators" onclick="document.cal.text.value+='+'">+</span>
+            <span class="num operators" onclick="document.cal.text.value+='-'">-</span>
+            <span class="num operators" onclick="document.cal.text.value+='*'">X</span>
+
+
+            <span class="num num_key" onclick="document.cal.text.value+='7'">7</span>
+            <span class="num num_key" onclick="document.cal.text.value+='8'">8</span>
+            <span class="num num_key" onclick="document.cal.text.value+='9'">9</span>
+            <span class="num operators clear" onclick="document.cal.text.value=''">C</span>
+
+
+
+            <span class="num num_key" onclick="document.cal.text.value+='4'">4</span>
+            <span class="num num_key" onclick="document.cal.text.value+='5'">5</span>
+            <span class="num num_key" onclick="document.cal.text.value+='6'">6</span>
+            <span class="num operators" onclick="document.cal.text.value='.'">.</span>
+
+            <span class="num num_key" onclick="document.cal.text.value+='3'">3</span>
+            <span class="num num_key" onclick="document.cal.text.value+='2'">2</span>
+            <span class="num num_key" onclick="document.cal.text.value+='1'">1</span>
+            <span class="num operators" onclick="document.cal.text.value+='0'">0</span>
+            <!-- <span class="num" onclick="document.cal.text.value+='0'">></span> -->
+            <span class="num calculate" onclick="document.cal.text.value=eval(cal.text.value)">=</span>
+        </form>
+    </div>
+</body>
+
+</html>
